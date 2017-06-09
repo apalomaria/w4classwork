@@ -1,0 +1,38 @@
+body {
+  text-align: center;
+}
+
+.box {
+  display: inline-block;
+  height: 50px;
+  width: 50%;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: #ffff4d;
+}
+
+.green {
+  background-color: #009933;
+}
+
+.black {
+  background-color:  #ffb84d;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .yellow, .green {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .red, .yellow, .green, .black {
+    width: 100%;
+  }
+}
